@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+
+    <link rel="stylesheet" href="./assets/stylesheets/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/stylesheets/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <p class="display-1 text-center">Online Exam</p>
+            </div>
+        </div>
+        <br>
+        <br>
+
+        <div class="row">
+            <div class="card col-xs-12 col-sm-8 offset-sm-2 col-md-6 offset-md-3">
+                <div class="card-body">
+                    <h5 id="qno" class="card-title">Question No</h5>
+                    <p id="qtext" class="card-text">Question Goes here.</p>
+                </div>
+                <ul class="list-group">
+                    <li class="list-group-item"> <input onclick="onChoose(1)" type="radio" name="option" value="1"> <span
+                            id="op1">Option 1</span></li>
+                    <li class="list-group-item"> <input onclick="onChoose(2)" type="radio" name="option" value="2"> <span
+                            id="op2">Option 2</span></li>
+                    <li class="list-group-item"> <input onclick="onChoose(3)" type="radio" name="option" value="3"> <span
+                            id="op3">Option 3</span></li>
+                    <li class="list-group-item"> <input onclick="onChoose(4)" type="radio" name="option" value="4"> <span
+                            id="op4">Option 4</span></li>
+                </ul>
+                <div class="card-body">
+                    <button id="button" class="btn btn-success card-link float-right" onclick="nextQuestion()">Next</button>
+                </div>
+            </div>
+        </div>
+
+
+    </div>  
+    <script src="./assets/script.js"></script>
+</body>
+</html>
